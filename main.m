@@ -9,12 +9,14 @@ figure; image(I); truesize;
 title('Original');
 
 IG = rgb2gray(I);
-J = canny(IG, true);
+J = canny(IG, false);
+figure; image(J); truesize;
+colormap(gray(256));
 
 % Closing doesn't quite help in this case
-% h = ones([5 5]);
+% h = ones([6 6]);
 % J = imdilate(J, h);
 % J = imerode(J, h);
 % figure; image(J); truesize;
 % colormap(gray(256));
-% title('Closing');
+% title('Closing'); 

@@ -10,6 +10,6 @@ function [res, weak, strong] = dblThreshold(I, lowRatio, highRatio, weak, strong
     
     weakMtx = (I < highThreshold) & (I >= lowThreshold);
     
-    res = res + strongMtx * strong;
-    res = res + weakMtx * weak;
+    res = res + (strongMtx * strong);
+    res = res + (weakMtx * weak);
 end
