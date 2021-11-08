@@ -2,4 +2,4 @@
 
 Detect edges, Performs OCR, and classifies business card information
 
-A list of referenced works/websites are in ___***reference.md***___
+A list of referenced works/websites are in **reference.md**
